@@ -19,7 +19,7 @@ public class EmployeeTest {
         System.out.printf("First Name: %s , Last Name: %s, Yearly Salary: $%.2f\n", emp_5.getFirstName(), emp_5.getLastName(), emp_5.getYearlySalary());
 
         Scanner scanner = new Scanner(System.in);
-        double pct;
+        double pct; // raise percentage
 
         System.out.println("\nLets give some raises! Enter a raise amount between 0.02-0.06 for each employee.\n");
 
@@ -47,6 +47,8 @@ public class EmployeeTest {
         pct = scanner.nextDouble();
         emp_5.giveRaise(pct);
         System.out.printf("%s's new yearly salary: $%.2f\n", emp_5.getFirstName(), emp_5.getYearlySalary());
+
+        scanner.close();
 
         System.out.println("\nWay to go! Here is a summary of your changes:\n");
 
