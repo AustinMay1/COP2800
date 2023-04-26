@@ -28,6 +28,9 @@ public class MonthlyBill {
         this.billAmounts = billAmounts;
     }
 
+    /**
+     * @return total amount due for the # of months entered
+     * */
     public double calculateAmountDue() {
         double total = 0;
 
@@ -37,6 +40,9 @@ public class MonthlyBill {
         return total;
     }
 
+    /**
+     * @return monthly average amount due based on total due / number of months
+     * */
     public double calculateMonthlyAvg() {
         return calculateAmountDue() / this.months;
     }
